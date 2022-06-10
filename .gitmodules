@@ -1,0 +1,21 @@
+[submodule "library/libvpx"]
+	path = library/libvpx
+	url = https://github.com/kaist-ina/libvpx.git
+[submodule "library/date"]
+	path = library/date
+	url = https://github.com/HowardHinnant/date.git
+[submodule "library/cxxopts"]
+	path = library/cxxopts
+	url = https://github.com/jarro2783/cxxopts.git
+[submodule "library/TensorRT"]
+	path = library/TensorRT
+	url = https://github.com/kaist-ina/TensorRT.git
+[submodule "library/json"]
+	path = library/json
+	url = https://github.com/nlohmann/json.git
+[submodule "library/libjpeg-turbo"]
+	path = library/libjpeg-turbo
+	url = https://github.com/kaist-ina/libjpeg-turbo.git
+[submodule "library/grpc"]
+	path = library/grpc
+	url = https://github.com/grpc/grpc.git

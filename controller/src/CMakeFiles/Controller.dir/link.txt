@@ -1,0 +1,2 @@
+/usr/bin/ar qc libController.a  CMakeFiles/Controller.dir/controller.cpp.o CMakeFiles/Controller.dir/decode_engine.cpp.o CMakeFiles/Controller.dir/control_common.cpp.o CMakeFiles/Controller.dir/anchor_engine.cpp.o
+/usr/bin/ranlib libController.a

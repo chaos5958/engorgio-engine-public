@@ -1,0 +1,72 @@
+
+syntax = "proto3";
+package engorgio.grpc;
+
+service GrpcNeuralEnhancer {
+    rpc Process (ProcessRequest) returns (ProcessReply) {}
+    rpc GetGPUs (GetGPUsRequest) returns (GetGPUsReply) {}
+    rpc LoadEngine (LoadEngineRequest) returns (LoadEngineReply) {}
+    rpc Finished (FinishedRequest) returns (FinishedReply) {}
+    rpc Terminate (TerminateRequest) returns (TerminateReply) {}
+}
+
+message ProcessRequest {
+    int32 stream_id = 1;
+    EngorgioModel model = 2;
+    repeated EngorgioFrame frames = 3;
+    int64 time_point = 4;
+    bool free_model = 5;
+}
+
+message ProcessReply {}
+
+message LoadEngineRequest {
+    EngorgioModel model = 1;
+}
+
+message LoadEngineReply {
+    bool result = 1;
+}
+
+message GetGPUsRequest {}
+
+message GetGPUsReply {
+    uint32 length = 1;
+}
+
+message EngorgioModel {
+    uint32 size = 1;
+    bytes buf = 2;
+    bytes name = 3;
+    int32 scale = 4;
+}
+
+message EngorgioFrame {
+    bytes rgb_buffer = 1;
+    int32 width = 2;
+    int32 height = 3;
+    int32 width_alloc = 4;
+    int32 height_alloc = 5;
+
+    int32 frame_type = 6;
+    int32 residual_size = 7;
+    int32 current_video_frame = 8;
+    int32 current_super_frame = 9;
+
+    int32 stream_id = 10;
+    bool is_sorted = 11;
+    double diff_residual = 12;
+    int32 prev_total_residual = 13;
+    int32 offset = 14;
+}
+
+message FinishedRequest {
+    int32 num_frames = 1;
+}
+message FinishedReply {
+    bool result = 1;
+}
+
+message TerminateRequest {}
+
+message TerminateReply {}

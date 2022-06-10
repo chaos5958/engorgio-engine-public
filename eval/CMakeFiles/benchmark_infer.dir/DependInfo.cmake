@@ -1,0 +1,46 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/workspace/research/engorgio-engine/library/TensorRT/samples/common/logger.cpp" "/workspace/research/engorgio-engine/eval/CMakeFiles/benchmark_infer.dir/__/library/TensorRT/samples/common/logger.cpp.o"
+  "/workspace/research/engorgio-engine/eval/benchmark_infer.cpp" "/workspace/research/engorgio-engine/eval/CMakeFiles/benchmark_infer.dir/benchmark_infer.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "D_LARGEFILE64_SOURCE"
+  "KDU_X86_INTRINSICS"
+  "NDEBUG"
+  "_FILE_OFFSET_BITS=64"
+  )
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/local/cuda/include"
+  "library/libvpx"
+  "library/libvpx/vpx"
+  "library/date/include"
+  "library/TensorRT/samples/common"
+  "enhancer/include"
+  "tool/include"
+  "compiler/include"
+  "library/cxxopts/include"
+  "library/json/include"
+  "library/libvpx/third_party/libwebm"
+  "library/kakadu"
+  "controller/include"
+  "library/intel-ipp/include"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/workspace/research/engorgio-engine/compiler/src/CMakeFiles/Compiler.dir/DependInfo.cmake"
+  "/workspace/research/engorgio-engine/tool/src/CMakeFiles/Tool.dir/DependInfo.cmake"
+  "/workspace/research/engorgio-engine/enhancer/src/CMakeFiles/Enhancer.dir/DependInfo.cmake"
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
